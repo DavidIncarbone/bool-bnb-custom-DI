@@ -6,7 +6,7 @@ import style from "../styles/Card.module.css";
 
 const imgPath = import.meta.env.VITE_IMGPATH;
 const apiUrl = import.meta.env.VITE_APIURL;
-const endpoint = "/apartments/";
+const endpoint = "apartments/";
 
 export default function CardAdvResearch({ apartment, addLike }) {
     const slug = apartment.slug;

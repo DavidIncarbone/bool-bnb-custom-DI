@@ -3,12 +3,11 @@ import { useGlobalContext } from "../contexts/GlobalContext";
 import Card from "../components/Card.jsx";
 import CardMostVisitedCity from "../components/CardMostVisitedCity.jsx";
 import CardAllCategories from "../components/CardAllCategories.jsx";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LoaderCard from "../components/LoaderCard.jsx";
 import axios from "axios";
 import SearchHomePage from "../components/SearchHomePage.jsx";
 import { motion } from "framer-motion";
-import PaginationHome from "../components/PaginationHome.jsx"
 import Carousel from "../components/Carousel.jsx";
 
 export default function Homepage() {
@@ -28,15 +27,11 @@ export default function Homepage() {
     const [width, setWidth] = useState(window.innerWidth);
     const { addLike, isLoading, setIsLoading, isHomePage } = useGlobalContext();
     const [page, setPage] = useState(1);
-    const apiURL = `http://localhost:3000/api`;
-    const endpoint = `/apartments/`;
-    //const [search, setSearch] = useState("")
-    // const [tempFormData, setTempFormData] = useState({
-    //     searchParam: "",
-    // });
+    const apiURL = import.meta.env.VITE_APIURL;
+    const endpoint = `apartments/`;
+
     const delayAnim = 0.05;
 
-    //const searchValue = typeof search?.searchParam === "string" ? search.searchParam.trim() : "";
 
 
     function getMostLovedApartments() {
@@ -169,15 +164,15 @@ export default function Homepage() {
                     <h3 className="py-2 mt-5 fw-bold">Our top {mostLovedApartmentsCount} loved apartments</h3>
 
                     {mostLovedApartments?.map((apartment, index) => (
-                        <div 
-                        className={`col-12 
-                          ${index === 0 ? "col-md-8" : 
-                            index === 1 ? "col-md-4" : 
-                          (index === 2 || index === 3) ? "col-md-6" : 
-                          (index === 4) ? "col-md-12" :""} 
-                          ${index < 2 ? "col-lg-6" : "col-lg-4"} g-4`} 
-                        key={apartment.id}
-                      >
+                        <div
+                            className={`col-12 
+                          ${index === 0 ? "col-md-8" :
+                                    index === 1 ? "col-md-4" :
+                                        (index === 2 || index === 3) ? "col-md-6" :
+                                            (index === 4) ? "col-md-12" : ""} 
+                          ${index < 2 ? "col-lg-6" : "col-lg-4"} g-4`}
+                            key={apartment.id}
+                        >
                             {isLoading ? (
                                 <LoaderCard />
                             ) : (
@@ -219,19 +214,19 @@ export default function Homepage() {
                     <h3 className="py-2 mt-5 fw-bold">Check out these {lastTimeChanceCount} random suggestions!</h3>
 
                     {lastTimeChance?.map((apartment, index) => (
-                        <div 
-                        className={`col-12 
-                          ${index === 0 ? "col-md-8" : 
-                            index === 1 ? "col-md-4" : 
-                          (index === 2 || index === 3) ? "col-md-6" : 
-                          (index === 4) ? "col-md-4" : 
-                          (index === 5) ? "col-md-8" : "col-md-2"} 
+                        <div
+                            className={`col-12 
+                          ${index === 0 ? "col-md-8" :
+                                    index === 1 ? "col-md-4" :
+                                        (index === 2 || index === 3) ? "col-md-6" :
+                                            (index === 4) ? "col-md-4" :
+                                                (index === 5) ? "col-md-8" : "col-md-2"} 
                           ${index < 1 || (index > 3 && index === 4) ? "col-lg-6" : "col-lg-3"} 
-                          g-4`} 
-                        key={apartment.id}
-                      >
-                      
-                        
+                          g-4`}
+                            key={apartment.id}
+                        >
+
+
                             {isLoading ? (
                                 <LoaderCard />
                             ) : (

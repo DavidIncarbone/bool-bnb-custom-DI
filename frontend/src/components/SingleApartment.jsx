@@ -24,7 +24,7 @@ export default function SingleApartment({ apartment, categories, city, ownerMail
     const [likes, setLikes] = useState(apartment.item.likes);
     const imgPath = import.meta.env.VITE_IMGPATH;
     const apiUrl = import.meta.env.VITE_APIURL;
-    const endpoint = "/apartments/";
+    const endpoint = "apartments/";
 
     const delayAnim = 0.05;
     useEffect(() => {

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const apiUrl = import.meta.env.VITE_APIURL;
-const endpoint = "/apartments/";
+const endpoint = "apartments/";
 
 const initialNewApartment = {
     category: 0,

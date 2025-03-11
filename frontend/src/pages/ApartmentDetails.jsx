@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 
 // Api url ed endpoint per axiox
 const apiUrl = import.meta.env.VITE_APIURL;
-const endpoint = "/apartments/";
+const endpoint = "apartments/";
 export default function ApartmentDetails() {
 
     const initialForm = {

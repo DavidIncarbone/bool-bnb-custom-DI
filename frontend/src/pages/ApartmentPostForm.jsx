@@ -29,8 +29,8 @@ export default function ApartmentPostForm() {
     const [errors, setErrors] = useState({});
     const [slug, setSlug] = useState("");
     const navigate = useNavigate();
-    const categoriesAPI = "http://localhost:3000/api/apartments/categories";
-    const apartmentsAPI = "http://localhost:3000/api/apartments/";
+    const categoriesAPI = "https://bool-bnb-custom-backend.onrender.com/api/apartments/categories";
+    const apartmentsAPI = "https://bool-bnb-custom-backend.onrender.com/api/apartments/";
     const isFormEmpty = Object.values(apartmentData).every(value => value === "" || value == 0);
 
     useEffect(() => {
@@ -234,7 +234,7 @@ export default function ApartmentPostForm() {
                 formData.append("file", apartmentData.image); // Assicurati che il nome del campo 'file' corrisponda a quello nel backend
             }
             axios
-                .post("http://localhost:3000/api/apartments", formData)
+                .post("https://bool-bnb-custom-backend.onrender.com/api/apartments", formData)
                 .then((res) => {
                     setSlug(res.data.slug);
                     setApartmentData(initialNewApartment);

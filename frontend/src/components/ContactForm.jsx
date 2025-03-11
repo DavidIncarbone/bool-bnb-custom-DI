@@ -148,7 +148,7 @@ export default function ContactForm({ ownerMail, city, category, info, name }) {
                             value={message}
                             onChange={handleMessageChange}
                             placeholder="Insert your message"
-                            autocomplete="off"
+                            autoComplete="off"
                             required
                         />
                         {message && (
