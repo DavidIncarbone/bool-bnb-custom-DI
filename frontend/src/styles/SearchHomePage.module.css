@@ -1,0 +1,19 @@
+/* SearchHomePage.module.css */
+
+.searchInput {
+    position: relative;
+}
+
+.clearIcon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+}
+
+/* La X appare solo se c'è un valore nell'input */
+.searchInput input:not(:placeholder-shown)+.clearIcon {
+    display: block;
+}

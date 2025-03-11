@@ -1,0 +1,203 @@
+:root {
+    --text-dark: #2E3532;
+    --main-vanilla: #EADAA2;
+    --contrast: #8B2635;
+    --sunlight: #C6A664;
+}
+
+.debug {
+    border: 1px, solid, red;
+}
+
+body {
+    font-family: "Simonetta", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer {
+    background-image: url("../img/footer.jpg");
+}
+
+footer a {
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 80px;
+    z-index: 1000;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    /* Per i browser Webkit come Chrome, Safari */
+    -moz-appearance: none;
+    /* Per Firefox */
+    appearance: none;
+    /* Per il supporto generale */
+    background: transparent;
+    /* Rendi lo sfondo trasparente */
+    padding-right: 20px;
+    /* Aggiungi spazio per evitare che il testo si sovrapponga */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+/* CSS Jumbotron */
+.jumbotron {
+    background-image: url("../img/Jumbotron.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.custom-button {
+    padding: 20px 30px;
+    box-shadow: 2px 2px 1px var(--text-dark);
+    border: 2px solid var(--text-dark);
+    border-radius: 0px;
+    color: var(--text-dark);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.custom-button:hover {
+    border: 2px solid var(--contrast);
+    color: var(--text-dark);
+    transform: scale(0.95);
+    background-color: #c6a56475;
+    box-shadow: 1px 1px 1px var(--text-dark);
+    transition: all 0.3s;
+}
+
+.link-btn {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.link-btn:hover {
+    color: var(--contrast);
+}
+
+#id-navbar {
+    height: 80px;
+    opacity: 0.95;
+    background-color: var(--main-vanilla);
+}
+
+
+.btn-send {
+    background-color: var(--sunlight);
+    color: white !important;
+    font-weight: 700;
+    border: 1px solid var(--sunlight);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.btn-send:hover {
+    background-color: #CB9E43;
+    color: var(--text-dark) !important;
+}
+
+.btn-send:disabled {
+
+    background-color: var(--sunlight);
+    color: rgba(255, 255, 255, 0.6) !important;
+    border-color: rgba(255, 255, 255, 0.6);
+    cursor: not-allowed;
+    opacity: 0.5;
+
+}
+
+.navbar-toggler,
+.navbar-nav {
+    text-shadow: 1px 1px 1px var(--text-dark);
+    background-color: transparent;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler-icon:hover {
+    background-color: #CB9E43;
+    border: var(--sunlight);
+}
+
+.custom-link:hover {
+    color: #AE1A30 !important;
+}
+
+.jumbo-text {
+    text-shadow: 2px 2px 1px var(--text-dark);
+}
+
+/* .icon-shadow {
+    filter: drop-shadow(0 5px 2px var(--text-dark));
+} */
+
+.no-query {
+    height: 50vh;
+}
+
+.btn-close:hover {
+    background-color: transparent !important;
+}
+
+.btn-close:focus {
+    --bs-btn-close-focus-shadow: none;
+    box-shadow: none !important;
+    /* Aggiungi per rimuovere l'ombra */
+}
+
+
+input[type="text"] {
+
+    font-family: "Simonetta", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: var(--bs-border-color) !important;
+}
+
+#footer-links li:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+
+    #navbarSupportedContent {
+        position: fixed;
+        left: 0;
+        top: 70px;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .navbar-toggler,
+    .navbar-nav {
+        background-color: var(--sunlight);
+
+    }
+}

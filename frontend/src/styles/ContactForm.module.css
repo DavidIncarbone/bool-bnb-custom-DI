@@ -1,0 +1,55 @@
+.contactFormContainer {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm {
+    max-width: 600px;
+    margin: auto;
+}
+
+.statusMessage {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #28a745;
+    /* verde per successo */
+}
+
+/* Personalizzazione del messaggio di errore */
+.statusMessage.error {
+    color: #dc3545;
+    /* rosso per errore */
+}
+
+/* Formattazione aggiuntiva */
+.form-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.btn-primary:disabled {
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

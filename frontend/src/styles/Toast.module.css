@@ -1,0 +1,25 @@
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    min-width: 200px;
+    opacity: 0.9;
+    z-index: 1050;
+    transition: opacity 0.5s ease-out;
+}
+
+.toast-body {
+    font-size: 16px;
+    color: white;
+}
+
+.toast .btn-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+.formContainer {
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8B2635;
+}
+
+form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+input,
+select {
+    border-radius: 5px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.fieldInfo {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

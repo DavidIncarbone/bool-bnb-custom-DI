@@ -1,0 +1,51 @@
+.errorPage {
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-psd/404-background-construction-concept_23-2150078627.jpg?t=st=1739746770~exp=1739750370~hmac=18fe920587f0ba99b85afc661cb8e719c54076e5f8e0df63230f65cb926910a2&w=996');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Filtro scuro per migliorare la leggibilità */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    color: white;
+}
+
+.errorTitle {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.errorMessage {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

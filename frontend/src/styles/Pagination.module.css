@@ -1,0 +1,20 @@
+.pageBtn {
+    background-color: #E2E3E5;
+    color: black !important;
+    box-shadow: none !important;
+}
+
+.pageBtn:hover {
+    background-color: #c6a664;
+    color: black !important;
+}
+
+.active {
+    background-color: #c6a664 !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+.dark {
+    color: black !important;
+}

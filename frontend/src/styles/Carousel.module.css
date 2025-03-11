@@ -1,0 +1,42 @@
+.carouselContainer {
+  position: relative;
+}
+
+.swiperContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.swiperSlide > div {
+  width: 100%; 
+  height: 100%;
+}
+
+.swiper-button-next,
+ .swiper-button-prev {
+  color: #000; 
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10; 
+  position: absolute; 
+}
+
+.swiper-button-next {
+  right: -50%; 
+}
+
+.swiper-button-prev {
+  left: 50%;
+} 

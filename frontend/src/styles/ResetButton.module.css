@@ -1,0 +1,39 @@
+/* Stile per il bottone */
+.btnReset {
+    background-color: #b0b0b0;
+    color: white !important;
+    font-weight: 700;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.btnReset:hover {
+
+    color: var(--text-dark) !important;
+    background-color: #b0b0b0;
+
+}
+
+
+/* Stile per il bottone disabilitato */
+.btnReset:disabled {
+    background-color: #e0e0e0;
+    /* Colore grigio chiaro per il bottone disabilitato */
+    color: #b0b0b0 !important;
+    /* Colore del testo disabilitato */
+    border-color: #b0b0b0;
+    /* Cambia il bordo a un colore simile */
+    cursor: not-allowed;
+    /* Cambia il cursore per indicare che il bottone è disabilitato */
+    opacity: 0.6;
+    /* Riduce l'opacità per dare un effetto disabilitato */
+}
+
+.btnReset:disabled:hover {
+    background-color: #e0e0e0;
+    /* Nessun cambiamento di colore durante l'hover se disabilitato */
+    color: #b0b0b0 !important;
+    /* Nessun cambiamento del colore del testo */
+}
