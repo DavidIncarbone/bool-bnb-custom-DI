@@ -1,8 +1,41 @@
-# React + Vite
+# React Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```bash
+# clono la cartella da github
 
-Currently, two official plugins are available:
+npm create vite@latest
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# alla domanda project-name inserisco . (dot)
+
+npm install
+
+# testo
+npm run dev
+
+# apro il .gitignore e aggiungo package-lock.json
+
+ # installo gli altri pacchetti che mi servono
+
+ # cancello il contenuto di App.jsx e rimuovo gli import che non mi servono
+ # cancello i file che non mi servono
+
+ #se voglio importo bootstrap in main.jsx prima del mio css custom
+ import "bootstrap/dist/css/bootstrap.min.css";
+
+ # comincio ad editare App.jsx
+
+
+# add to rules in eslint
+rules: {
+      ...js.configs.recommended.rules,
+      ...react.configs.recommended.rules,
+      ...react.configs["jsx-runtime"].rules,
+      ..reactHooks.configs.recommended.rules,
+      "react/prop-types": 0, 👈
+      "react/jsx-no-target-blank": "off",
+      "react-refresh/only-export-components": [
+        "warn",
+        { allowConstantExport: true },
+      ],
+    },
+```
