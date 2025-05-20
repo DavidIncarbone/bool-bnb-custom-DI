@@ -59,5 +59,5 @@ Frontend realizzato in <b>HTML CSS + Bootstrap, JavaScript con React.js.</b>
 <ul>
   <li><b>Trello:</b> realizzazione della Kanban iniziale</li>
   <li><b>VSCode:</b> editor di sviluppo </li>
-  <li><b>Git:</b>b software controllo di versione</li>
+  <li><b>Git:</b> software controllo di versione</li>
 </ul>
